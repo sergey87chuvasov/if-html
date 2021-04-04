@@ -6,21 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML – first steps</title>
     <style>
-    table {
-       width: 100%;
-       border-collapse: inherit;
-       border: 1px solid gray;
-    }
-    th {
-       text-align: center;
-       padding: 10px;
-       border: 1px solid black;
-    }
-    td {
-       text-align: left;
-       padding: 10px;
-       border: 1px solid black;
-    }
+      table {
+        width: 100%;
+        border-collapse: inherit;
+        border: 1px solid gray;
+      }
+      th {
+        text-align: center;
+        padding: 10px;
+        border: 1px solid black;
+      }
+      td {
+        text-align: left;
+        padding: 10px;
+        border: 1px solid black;
+      }
     </style>
   </head>
   <body>
@@ -41,8 +41,8 @@
     </p>
     <h4>Ознакомительное фото</h4>
     <img src="./images/frontend.jpg" alt="front-end pic" />
-    <br/>
-    <br/>
+    <br />
+    <br />
     <ol type="1">
       <li>
         Знакомство с Web
@@ -77,9 +77,9 @@
         </ul>
       </li>
     </ol>
-    <br/>
-    <br/>
-    <br/>
+    <br />
+    <br />
+    <br />
     <table>
       <caption>
         Таблица 1.
@@ -98,7 +98,9 @@
       </tr>
       <tr>
         <td>&lt;th&gt;</td>
-        <td rowspan="2">Defines a &quot;header cell&quot; / &quot;cell&quot; in a table</td>
+        <td rowspan="2">
+          Defines a &quot;header cell&quot; / &quot;cell&quot; in a table
+        </td>
       </tr>
       <tr>
         <td>&lt;td&gt;</td>
@@ -106,7 +108,7 @@
       <tr>
         <td colspan="2">Rarely used</td>
       </tr>
-        <tr>
+      <tr>
         <td>&lt;caption&gt;</td>
         <td>Defines a caption table</td>
       </tr>
@@ -120,67 +122,88 @@
       </tr>
       <tr>
         <td>&lt;tfoot&gt;</td>
-      <td>Groups the footer content in a table</td>
+        <td>Groups the footer content in a table</td>
       </tr>
     </table>
-    <br/>
-    <br/>
-    <br/>
-    <form action:'/' method:'GET'>
+    <br />
+    <br />
+    <br />
+    <form action="/" method="get">
       <fieldset>
         <legend>My first form</legend>
         <label for="name">Name</label>
-    <br/>
-        <input id="name" type="text" name="firstName" placeholder="Name" required />
-    <br/>
-    <br/>
+        <br />
+        <input
+          id="name"
+          type="text"
+          name="firstName"
+          placeholder="Name"
+          required
+        />
+        <br />
+        <br />
         <label for="email">Email</label>
-    <br/>
+        <br />
         <input id="email" type="email" name="myEmail" required />
-    <br/>
-    <br/>
+        <br />
+        <br />
         <label for="pass">Password</label>
-    <br/>
+        <br />
         <input id="pass" type="password" name="myPassword" required />
-    <br/>
-    <br/>
-    <label for="range">Your programming level</label>
-    <br/>
-        <input id="range" type="range" name="myRange" min="1" max="10" step="1"/>
-    <br/>
-    <br/>
-      <h4>What does HTML stand for?</h4>
+        <br />
+        <br />
+        <label for="range">Your programming level</label>
+        <br />
+        <input
+          id="range"
+          type="range"
+          name="myRange"
+          min="1"
+          max="10"
+          step="1"
+        />
+        <br />
+        <br />
+        <h4>What does HTML stand for?</h4>
         <input type="checkbox" id="answer1" name="test1" value="1" />
         <label for="answer1">Hyperlinks and Text Markup Language</label>
-    <br/>
+        <br />
         <input type="checkbox" id="answer2" name="test2" value="2" />
         <label for="answer2">Home Tool Markup Language</label>
-    <br/>
+        <br />
         <input type="checkbox" id="answer3" name="test3" value="3" />
         <label for="answer3">Hyper Text Markup Language</label>
-    <br/>
-      <h4>What does HTTP stand for?</h4>
-        <input type="radio" name="answer1" value="1"/>Hyper Text Translate Protokol
-    <br/>
-        <input type="radio" name="answer2" value="2"/>Hyper Text Transmission Protokol
-    <br/>
-        <input type="radio" name="answer3" value="3"/>Hyper Text Transfer Protokol
-    <br/>
-      <h4>Comment</h4>
-        <textarea name="textBig" cols="30" rows="4" placeholder="Comment" maxlength="500">
-        </textarea>
-    <br/>
-      <h4>What does HTML stand for?</h4>
+        <br />
+        <h4>What does HTTP stand for?</h4>
+        <input type="radio" name="answer" value="1" id="radio1" />
+        <label for="radio1">Hyper Text TranslateProtokol</label>
+        <br />
+        <input type="radio" name="answer" value="2" id="radio2" />
+        <label for="radio2">Hyper Text Transmission Protokol</label>
+        <br />
+        <input type="radio" name="answer" value="3" id="radio3" />
+        <label for="radio3">Hyper Text Transfer Protokol</label>
+        <br />
+        <h4>Comment</h4>
+        <textarea
+          cols="30"
+          rows="4"
+          placeholder="Comment"
+          name="textBig"
+          maxlength="500"
+        ></textarea>
+        <br />
+        <h4>What does HTML stand for?</h4>
         <select name="answer">
-          <option>Hyper Text Markup Language</option>
-          <option>Hyper Toll Markup Language</option>
-          <option>Hyper Thron Markup Language</option>
+          <option value="item1">Hyper Text Markup Language</option>
+          <option value="item2">Hyper Toll Markup Language</option>
+          <option value="item3">Hyper Thron Markup Language</option>
         </select>
-    <br/>
-    <br/>
+        <br />
+        <br />
         <input type="submit" name="button" value="Send" />
       </fieldset>
     </form>
-    <hr/>
+    <hr />
   </body>
 </html>
