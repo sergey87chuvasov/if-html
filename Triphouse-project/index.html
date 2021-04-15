@@ -13,9 +13,168 @@
     <title>Triphouse-project</title>
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a href="#" class="logo__img-link">
+            <img
+              class="header__top-logo"
+              src="./images/logo-header.svg"
+              alt="logo pic"
+          /></a>
+          <nav class="nav">
+            <div class="nav__items">
+              <ul class="nav__item">
+                <li>
+                <a class="nav__item-link nav__link--active" href="#">Stays</a>
+                </li>
+                <li>
+                <a class="nav__item-link" href="#">Attractions</a>
+                </li>
+              </ul>
+            </div>
+            <div class="nav__items-user">
+              <button class="nav__item-btn" type="submit" value="night" name="night mode">
+                <img
+                  class="nav__item-img"
+                  src="./images/night.svg"
+                  alt="night mode"
+                />
+              </button>
+              <a class="user__item-link" href="">
+                <img
+                  class="user__item-img"
+                  src="./images/accountCircle.svg"
+                  alt="account pic"
+                />
+              </a>
+              <button class="user__item-burger"><img class="user__item-burger-img" src="./images/burger.svg" alt="menu burger"></button>
+            </div>
+          </nav>
+        </div>
+        <div class="header__content">
+          <h1 class="title">Discover stays </br> to live, work or just relax</h1>
+          <form action="/" method="get">
+          <div class="order__block">
+          <span class="input__name-text" >Your destination or hotel name</span>
+          <span class="input__date-text">Check-in — Check-out</span>
+          <div class="block__inner">
+          <div>
+            <label for="name-hotel"></label>
+        <input class="input__name"
+          id="name-hotel"
+          type="search"
+          name="hotelName"
+          placeholder="New York"
+          required
+        /></div>
+        <div>
+             <label for="date-hotel"></label>
+        <input class="input__date input-active"
+          id="date-hotel"
+          type="text"
+          name="setDate"
+          placeholder="Tue 15 Sept — Sat 19 Sept"
+          required
+        /></div>
+        <div>
+            <label for="count-hotel"></label>
+        <input class="input__count"
+          id="count-hotel"
+          type="text"
+          name="setCount"
+          placeholder="2 Adults — 0 Children — 1 Room"
+          required
+        /></div>
+        <div>
+            <button class="order__block-btn">Search</button>
+            </div>
+          </div>
+          </div>
+          <div class="order__block-media">
+          <div>
+            <label for="name__hotel-media"></label>
+        <input class="input__name-media"
+          id="name__hotel-media"
+          type="search"
+          name="hotelDestination"
+          placeholder="Your destination or hotel name"
+          required
+        />
+        </div>
+        <div class="check__date">
+        <div>
+            <label for="name__hotel-media"></label>
+        <input class="input__checkin-media"
+          id="name__hotel-media"
+          type="search"
+          name="hotelCheckIn"
+          placeholder="Check-in date"
+          required
+        />
+        </div>
+        <div>
+            <label for="name__hotel-media"></label>
+        <input class="input__checkout-media"
+          id="name__hotel-media"
+          type="search"
+          name="hotelCheckOut"
+          placeholder="Check-out date"
+          required
+        />
+        </div>
+          </div>
+          <div class="input__Allmaininfo">
+          <div>
+            <label for="name__hotel-media"></label>
+        <input class="input__adults"
+          id="name__hotel-media"
+          type="search"
+          name="adults"
+          placeholder="Adults"
+          required
+        />
+        </div>
+        <div>
+            <label for="name__hotel-media"></label>
+        <input class="input__children"
+          id="name__hotel-media"
+          type="search"
+          name="Children"
+          placeholder="Children"
+          required
+        />
+        </div>
+        <div>
+            <label for="name__hotel-media"></label>
+        <input class="input__rooms"
+          id="name__hotel-media"
+          type="search"
+          name="Rooms"
+          placeholder="Rooms"
+          required
+        />
+        </div>
+          </div>
+            <div>
+            <button class="order__media-btn">Search</button>
+            </div>
+          </div>
+          </form>
+          <div class="download__info">
+            <a class="download__info-links" href="#"
+              ><img src="./images/google-play.jpg" alt="download link"
+            /></a>
+            <a class="download__info-links" href="#"
+              ><img src="./images/app-store.jpg" alt="download link"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </header>
     <section class="offer">
       <div class="container">
-        <h1 class="offer__title">What do we offer</h1>
+        <h2 class="offer__title">What do we offer</h2>
         <div class="offer__items">
           <div class="offer__item">
             <img
@@ -54,9 +213,11 @@
     </section>
     <footer class="footer">
       <div class="container">
-      <div class="footer__logo">
-      <a class="footer__logo-link" href="#"><img src="./images/logo-footer-media.svg" alt="logo pic"></a>
-      </div>
+        <div class="footer__logo">
+          <a class="footer__logo-link" href="#"
+            ><img src="./images/logo-footer-media.svg" alt="logo pic"
+          /></a>
+        </div>
         <div class="footer__items">
           <div class="footer__item">
             <h4 class="footer__item-title">About</h4>
@@ -99,7 +260,9 @@
             <h4 class="footer__item-title">Support</h4>
             <ul class="footer__item-lists">
               <li class="footer__item-list">
-                <a class="footer__item-link" href="#">Contact Customer Service</a>
+                <a class="footer__item-link" href="#"
+                  >Contact Customer Service</a
+                >
               </li>
               <li class="footer__item-list">
                 <a class="footer__item-link" href="#">FAQ</a>
