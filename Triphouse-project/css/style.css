@@ -152,6 +152,7 @@ input {
   border:none;
   border-radius: 8px;
 }
+
 input:focus {
   border: 3px solid #F5BD41;
   border-radius: 8px;
@@ -175,7 +176,7 @@ input:focus {
   border-radius: 0 0 0 0;
 }
 .order__block-btn {
-  padding: 20px 61px;
+  padding: 19px 61px;
   background: #3077C6;
   border-radius: 8px;
   font-weight: 500;
@@ -387,40 +388,63 @@ input:focus {
     border: 4px solid #F5BD41;
   }
   .input__name-media {
-    background: #fff;
-    border-radius: 4px;
-    padding: 14px 36px;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 18px;
-    width: 100%;
-    display: block;
+      background: #fff;
+      background-image: url(../images/search.svg);
+      background-repeat: no-repeat;
+      background-position: 15px 15px;
+      border-radius: 4px;
+      padding: 14px 36px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 18px;
+      width: 100%;
+      display: block;
   }
   .input__name-media::placeholder {
     color:#383838;
+    font-weight: bold;
   }
   .check__date {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    height: 48px;
+    margin-top: 10px;
+  }
+  .check__datein,
+  .check__dateout {
+    background-color: #fff;
+    width: 49%;
+    border-radius: 5px;
   }
   .input__checkin-media {
     margin-top: 8px;
     background: #fff;
     border-radius: 4px;
-    padding: 14px 10px;
+    padding: 0px 10px;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
     width: 95%;
   }
-  .input__checkin-media::placeholder {
+  .check__datein-text,
+  .check__dateout-text {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: left;
+    padding: 5px 10px 0px 10px;
+  }
+  .input__checkin-media::placeholder,
+  .input__checkout-media::placeholder {
     color: #383838;
+    font-weight: bold;
   }
   .input__checkout-media {
     margin-top: 8px;
     background: #fff;
     border-radius: 4px;
-    padding: 14px 10px;
+    padding: 0 10px;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
@@ -430,22 +454,36 @@ input:focus {
     color: #383838;
   }
   .input__Allmaininfo {
+    background-color: #fff;
     display: flex;
     justify-content: center;
-    margin-top: 8px;
+    height: 48px;
+    margin-top: 10px;
+    padding: 5px 5px;
+    border-radius: 4px;
+  }
+  .input__Allmaininfo p {
+    font-size: 12px;
+    line-height: 14px;
+    padding: 0 10px;
   }
   .input__Allmaininfo input{
     width: 100%;
     background: #fff;
     border-radius: 4px;
-    padding: 14px 12px;
+    padding: 5px 12px;
     font-weight: 500;
     font-size: 15px;
     line-height: 18px;
   }
   .input__Allmaininfo input::placeholder{
     color: #383838;
+    font-weight: bold;
   }
+ .input__Allmaininfo-children {
+   border-left: 1px solid #BFBFBF;
+   border-right: 1px solid #BFBFBF;
+ }
   input:focus {
     border: none;
   }
@@ -454,14 +492,14 @@ input:focus {
     background: #3077C6;
     border-radius: 8px;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 19px;
+    line-height: 22px;
     text-align: center;
     border:none;
     color: #FFFFFF;
     cursor: pointer;
     width: 100%;
-    margin-top: 8px;
+    margin-top: 12px;
   }
   .download__info {
     display:flex;

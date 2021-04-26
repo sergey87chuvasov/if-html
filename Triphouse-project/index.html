@@ -60,7 +60,7 @@
              <label for="date-hotel"></label>
         <input class="input__date"
           id="date-hotel"
-          type="datetime-local"
+          type="datetime"
           name="setDate"
           placeholder="Tue 15 Sept — Sat 19 Sept"
           min="2020-12-01T00:30"
@@ -94,55 +94,60 @@
         />
         </div>
         <div class="check__date">
-        <div>
+        <div class="check__datein">
+        <p class="check__datein-text">Check-in date</p>
             <label for="name__hotel-media"></label>
         <input class="input__checkin-media"
           id="name__hotel-media"
-          type="search"
+          type="text"
           name="hotelCheckIn"
-          placeholder="Check-in date"
+          placeholder="Tue 15 Sept 2020"
           required
         />
         </div>
-        <div>
+        <div class="check__dateout">
+        <p class="check__dateout-text">Check-out date</p>
             <label for="name__hotel-media"></label>
         <input class="input__checkout-media"
           id="name__hotel-media"
           type="search"
           name="hotelCheckOut"
-          placeholder="Check-out date"
+          placeholder="Sat 19 Sept 2020"
           required
         />
         </div>
           </div>
           <div class="input__Allmaininfo">
-          <div>
+          <div class="input__Allmaininfo-adults" >
+          <p class="input__Allmaininfo-text">Adults</p>
             <label for="name__hotel-media"></label>
         <input class="input__adults"
           id="name__hotel-media"
-          type="search"
+          type="number"
           name="adults"
-          placeholder="Adults"
+          placeholder="2"
           required
         />
         </div>
-        <div>
+        <div class="input__Allmaininfo-children">
+        <p class="input__Allmaininfo-text">Children</p>
             <label for="name__hotel-media"></label>
         <input class="input__children"
           id="name__hotel-media"
-          type="search"
+          type="number"
           name="Children"
-          placeholder="Children"
+          placeholder="0"
           required
         />
         </div>
-        <div>
+        <div class="input__Allmaininfo-rooms">
+        <p class="input__Allmaininfo-text">Rooms</p>
             <label for="name__hotel-media"></label>
         <input class="input__rooms"
           id="name__hotel-media"
-          type="search"
+          type="number"
           name="Rooms"
-          placeholder="Rooms"
+          placeholder="1"
           required
         />
         </div>
