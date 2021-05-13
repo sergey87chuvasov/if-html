@@ -51,7 +51,7 @@
         }
         & li:last-child a:hover {
             border-bottom: 4px solid $color_hover;
-            transition: all .3s;
+            transition: all .3s ease;
         }
         &-btn {
             background-image: url('../images/sprites.svg');
@@ -169,17 +169,29 @@ input {
         width: 455px;
         text-align: left;
         border-radius: 8px 0 0 8px;
+        &::placeholder {
+            font-size: 16px;
+            color: $btn_color;
+        }
     }
     &__date {
         text-align: center;
         width: 265px;
         border-radius: 0 0 0 0;
         padding: 19.5px 21px;
+        &::placeholder {
+            font-size: 16px;
+            color: $btn_color;
+        }
     }
     &__count {
         text-align: center;
         width: 315px;
         border-radius: 0 0 0 0;
+        &::placeholder {
+            font-size: 16px;
+            color: $btn_color;
+        }
     }
 }
 
@@ -195,6 +207,9 @@ input {
         border: none;
         color: $bg;
         cursor: pointer;
+        &:hover {
+            color: $color_hover;
+        }
     }
     &-media {
         display: none;

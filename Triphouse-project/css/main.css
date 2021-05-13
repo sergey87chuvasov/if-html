@@ -69,7 +69,7 @@ body {
 }
 .nav__item li:last-child a:hover {
   border-bottom: 4px solid #F5BD41;
-  transition: all 0.3s;
+  transition: all 0.3s ease;
 }
 .nav__item-btn {
   background-image: url("../images/sprites.svg");
@@ -181,16 +181,28 @@ input:focus {
   text-align: left;
   border-radius: 8px 0 0 8px;
 }
+.input__name::placeholder {
+  font-size: 16px;
+  color: #383838;
+}
 .input__date {
   text-align: center;
   width: 265px;
   border-radius: 0 0 0 0;
   padding: 19.5px 21px;
 }
+.input__date::placeholder {
+  font-size: 16px;
+  color: #383838;
+}
 .input__count {
   text-align: center;
   width: 315px;
   border-radius: 0 0 0 0;
+}
+.input__count::placeholder {
+  font-size: 16px;
+  color: #383838;
 }
 
 .order__block-btn {
@@ -204,6 +216,9 @@ input:focus {
   border: none;
   color: #fff;
   cursor: pointer;
+}
+.order__block-btn:hover {
+  color: #F5BD41;
 }
 .order__block-media {
   display: none;
